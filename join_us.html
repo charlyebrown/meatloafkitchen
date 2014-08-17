@@ -67,7 +67,12 @@ testObject.save({foo: "bar"}).then(function(object) {
   alert("yay! it worked");
 });
 
-$.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]=17184905560&postparam[message]=hello&PHPSESSID=gae519f8k5humje0jqb195nob6');
+//$.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]=&postparam[message]=hello&PHPSESSID=gae519f8k5humje0jqb195nob6');
+$("#phone-form").bind("submit", function(evt){
+  evt.preventDefault();
+  mynum = $('#phone').val();
+  $.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]=' + mynum + '&postparam[message]=' + "Menu: Meatloaf and Mashed!" + '&PHPSESSID=gae519f8k5humje0jqb195nob6');
+});
 
 </script>
         <!-- Three -->
@@ -114,7 +119,7 @@ Social workers are on hand to help you with issues related to welfare, rehab, an
 </p>
             </div>
             <div>
-            <form>
+            <form id="phone-form">
               <h3>Sign up to receive a text with today's menu!</h3>
               Phone: <input id="phone" type="text" name="phone number">
               <input type="submit">
