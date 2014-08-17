@@ -796,10 +796,9 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
-		background-position: bottom left, bottom right, top left, top center;
+		background-image: url("http://tasteinspired.files.wordpress.com/2010/12/turkey-meatloaf-3.jpg"), url("images/overlay.png"), url("../images/banner.jpg");
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-size: 75em, auto, cover;
 		color: white;
 		cursor: default;
 		padding: 6em 0;
