@@ -61,13 +61,17 @@
     <!-- Main -->
       <article id="main">
 <script>
-var TestObject = Parse.Object.extend("TestObject");
-var testObject = new TestObject();
-testObject.save({foo: "bar"}).then(function(object) {
-  alert("yay! it worked");
-});
+$(function(){
+  var myMessage = "Welcome to Meatloaf Kitchen";
+  $("#phone-form").submit(function(evt){
+    evt.preventDefault();
+    mynum = $('#phone').val();
+    $.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]=' + mynum + '&postparam[message]='+myMessage+'&PHPSESSID=gae519f8k5humje0jqb195nob6');
+  });
+})
 
-$.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]=19172541907&postparam[message]=hello&PHPSESSID=gae519f8k5humje0jqb195nob6');
+
+
 
 </script>
         <!-- Three -->
