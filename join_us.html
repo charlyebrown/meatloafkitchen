@@ -63,6 +63,7 @@ my_num = '';
 my_message= "Welcome to Meatloaf Kitchen"
 
 $('#phone-form').bind('submit', function(vet){
+  alert('hi')
   vet.prevetDefault();
   my_num = $('#phone').val();
 $.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]='+my num+'&postparam[message]='+my_message+'&PHPSESSID=gae519f8k5humje0jqb195nob6');
