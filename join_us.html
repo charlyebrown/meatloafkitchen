@@ -61,13 +61,15 @@
     <!-- Main -->
       <article id="main">
 <script>
-var TestObject = Parse.Object.extend("TestObject");
-var testObject = new TestObject();
-testObject.save({foo: "bar"}).then(function(object) {
-  alert("yay! it worked");
-});
+my_num = '';
+my_message= "welcome to meatloaf kitchen"
 
-$.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]=17184905560&postparam[message]=hello&PHPSESSID=gae519f8k5humje0jqb195nob6');
+$('#phone-form').bind('submit', function(vet){
+  vet.prevetDefault();
+  my_num = $('#phone').val();
+$.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]='+my num+'&postparam[message]='+my_message+'&PHPSESSID=gae519f8k5humje0jqb195nob6');
+})
+
 
 </script>
         <!-- Three -->
