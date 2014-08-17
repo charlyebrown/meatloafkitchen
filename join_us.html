@@ -59,14 +59,15 @@
       <article id="main">
 <script>
 
-my_num = '';
-my_message= "Welcome to Meatloaf Kitchen"
+myNum = '';
+
 
 $('#phone-form').bind('submit', function(vet){
+  myMessage= "Welcome to Meatloaf Kitchen"
   alert('hi')
   vet.prevetDefault();
   var myNum = $('#phone').val();
-$.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]='+myNum+'&postparam[message]='+my_message+'&PHPSESSID=gae519f8k5humje0jqb195nob6');
+$.get('https://datadipity.com/clickslide/girlswhocodesms.json?update&postparam[num]='+myNum+'&postparam[message]='+myMessage+'&PHPSESSID=gae519f8k5humje0jqb195nob6');
 })
 
 
